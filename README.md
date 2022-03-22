@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Creation
+```angular2html
+npx create-next-app 
+```
+
 ## Getting Started
 
 First, run the development server:
@@ -10,25 +15,31 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Learnings
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Creating pages automatically adds the route
+- Use `Link` to navigate to the pages
+- Styles can be imported and applied
+- Assets (images) can be handled better in terms of sizing etc
+- js file chunking for faster loading
+- Creating Layout components
+- Use `classnames` library to switch classes
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+`npm install classnames --save`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Static generation
 
-## Learn More
+- This method will run and build time to fetch data and generate static pages
 
-To learn more about Next.js, take a look at the following resources:
+```angular2html
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const data = ...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  // The value of the `props` key will be
+  //  passed to the `Home` component
+  return {
+    props: ...
+  }
+}
+```
