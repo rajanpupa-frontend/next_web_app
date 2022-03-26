@@ -24,6 +24,8 @@ export async function getStaticProps() {
     return data;
 }
 
+// you can have this function pull data from somewhere else and generate the pages
+// Static generation works best if there are relatively small number of pages
 export async function getSortedPostsData() {
     // Get file names under /posts
     return {
