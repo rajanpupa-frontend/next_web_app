@@ -10,7 +10,7 @@ export const siteTitle = 'MockUniversity'
 export default function Layout({children, home}) {
     return (
         <div className={styles.container}>
-            <Header home/>
+            <Header/>
             <main className={styles.main}>{children}</main>
             {!home && (
                 <div className={styles.backToHome}>

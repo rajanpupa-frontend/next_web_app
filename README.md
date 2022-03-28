@@ -43,3 +43,12 @@ export async function getStaticProps() {
   }
 }
 ```
+
+### Next Auth 
+For next-auth to work following configs needs to be added in the `.env.local` file
+```
+NEXTAUTH_URL=http://localhost:3000
+// for each provider id and secret
+GITHUB_ID=
+GITHUB_SECRET=
+```

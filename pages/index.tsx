@@ -13,6 +13,7 @@ const Home: NextPage = () => {
                     <title>Mock University</title>
                     <meta name="description" content="The best way to learn anything."/>
                     <link rel="icon" href="/favicon.ico"/>
+
                 </Head>
                 <h1 className={styles.title}>
                     Read{' '}
