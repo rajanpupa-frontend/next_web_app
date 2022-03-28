@@ -20,7 +20,6 @@ export default function Post({posts}) {
 export async function getStaticProps() {
     // Call an external API endpoint to get posts
     const data = getSortedPostsData();
-
     return data;
 }
 

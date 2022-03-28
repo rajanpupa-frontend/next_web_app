@@ -1,0 +1,84 @@
+.flex{
+    display: flex;
+    flex-direction: row;
+    min-width: 680px;
+}
+
+.flexReverse {
+    flex-direction: row-reverse;
+}
+
+.w100 {
+    width: 100%;
+}
+.w20 {
+    min-width: 20%;
+}
+
+.none {
+    list-style: none;
+}
+
+.padLR {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.padUD {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.relative {
+    position: relative;
+}
+
+.center {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.shadow1 {
+    --tw-shadow: 0px 1px 3px rgba(0,0,0,0.04),0px 2px 8px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-color,0 0 #0000),var(--box-shadow),var(--tw-shadow);
+}
+
+.roundedBlk {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Dropdown src w3schools */
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+    margin-top: .5em;
+}
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdownContent a:hover {
+    background-color: #666666;
+    color: white;
+}
+/* End Dropdown Button */
+
