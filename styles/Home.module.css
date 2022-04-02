@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  /*padding: 0 2rem;*/
 }
 
 .fullpage {
@@ -29,7 +29,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  /*margin: 4rem 0;*/
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  //max-width: 800px;
+  /*max-width: 800px;*/
 }
 
 .card {

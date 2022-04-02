@@ -1,7 +1,5 @@
 .container {
-    min-width: 72rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
+    min-hight: 72rem;
 }
 
 .backToHome {
@@ -9,11 +7,11 @@
 }
 
 .main {
-    min-height: 55vh;
+    min-height: 65vh;
     padding: 2rem 0;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /*align-items: center;*/
+    /*justify-content: center;*/
+    align-items: center;
 }

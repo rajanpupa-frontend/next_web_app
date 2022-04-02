@@ -1,18 +1,20 @@
-.flex{
-    display: flex;
-    flex-direction: row;
-    min-width: 680px;
+#menu{
+    display: table;
+    text-align: center;
+    align-items: flex-end;
 }
-
-.flexReverse {
-    flex-direction: row-reverse;
+#menu li{
+    display: table-cell;
+    list-style: none;
+    text-align: center;
+    vertical-align: center;
+    max-height: 50px;
 }
-
-.w100 {
-    width: 100%;
+.top {
+    margin-top: -1em;
 }
-.w20 {
-    min-width: 20%;
+.bottom {
+    margin-top: 1em;
 }
 
 .none {
@@ -41,8 +43,8 @@
 }
 
 .shadow1 {
-    --tw-shadow: 0px 1px 3px rgba(0,0,0,0.04),0px 2px 8px rgba(0,0,0,0.08);
-    box-shadow: var(--shadow-color,0 0 #0000),var(--box-shadow),var(--tw-shadow);
+    --tw-shadow: 10px 1px 3px rgba(0,0,0,0.04),10px 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 10px 8px 16px 1px rgba(0,0,0,0.4);
 }
 
 .roundedBlk {
@@ -50,35 +52,5 @@
     overflow: hidden;
 }
 
-/* Dropdown src w3schools */
-.dropbtn {
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-    z-index: 1;
-    margin-top: .5em;
-}
-.dropdownContent a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdownContent a:hover {
-    background-color: #666666;
-    color: white;
-}
-/* End Dropdown Button */
+
 
